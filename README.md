@@ -1,1 +1,0 @@
-# davidkam.info
