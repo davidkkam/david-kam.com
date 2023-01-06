@@ -1493,7 +1493,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1em;
 			line-height: 1;
-			margin: 0;
+			margin: 1;
 			vertical-align: middle;
 		}
 
