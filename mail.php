@@ -1,34 +1,31 @@
 <?php
-
-$name = $_POST["name"];
-$email = $_POST["email"];
-$message = $_POST["message"];
-
-require "vendor/autoload.php";
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
-$mail = new PHPMailer(true);
-
-// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
-$mail->isSMTP();
-$mail->SMTPAuth = true;
-
-$mail->Host = "smtp.example.com";
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
-
-$mail->Username = "you@example.com";
-$mail->Password = "password";
-
-$mail->setFrom($email, $name);
-$mail->addAddress("dave@example.com", "Dave");
-
-$mail->Subject = $subject;
-$mail->Body = $message;
-
-$mail->send();
-
-header("Location: sent.html");
+    $mail_to = 'davidkamtravel@gmail.com';
+ 
+    $name = $_POST['name'];
+    $mail_from = $_POST['email'];
+    $message = $_POST['message'];
+ 
+    $subject = 'Subject ' . $name;
+ 
+    $body_message = 'From: ' . $name . "\r\n";
+    $body_message .= 'E-mail: ' . $mail_from . "\r\n";
+    $body_message .= 'Message: ' . $message;
+ 
+    $headers = 'From: ' . $mail_from . "\r\n";
+    $headers .= 'Reply-To: ' . $mail_from . "\r\n";
+ 
+    $mail_sent = mail($mail_to, $subject, $body_message, $headers);
+ 
+    if ($mail_sent == true){ ?>
+        <script language="javascript" type="text/javascript">
+        alert('Merci pour votre message. Nous vous recontacterons le plus rapidement possible.');
+		window.location = 'index.html#formulaire';
+         </script>
+    <?php } else { ?>
+    <script language="javascript" type="text/javascript">
+        alert('Message not sent. Please, notify site administrator myadmin@mydomain.com');
+		window.location = 'index.html#formulaire';
+    </script>
+    <?php
+    }
+?>
