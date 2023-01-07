@@ -1,17 +1,34 @@
 <?php
-//get data from form
-$name = $_POST['name']; 
-$email = $_POST['email'];
-$message = $_POST['message']; 
-$to = "dka_m@yahoo.com"; 
-$subject = "Mail from travel business";
-$txt = "Name = ". $name . "\r\n Email = " . $email . "\r\n
-	Mesage =" . $message;
-$headers = "From: noreply@david_kam.com" . "r\n" . 
-"CC: dka_m@yahoo.com";
-if($email!=NULL){
-	mail($to,$subject,$txt,$headers);
-}
-//redirect
-header("Location:thankyou.html");
-?>
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
+
+require "vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mail = new PHPMailer(true);
+
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.example.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "you@example.com";
+$mail->Password = "password";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("dave@example.com", "Dave");
+
+$mail->Subject = $subject;
+$mail->Body = $message;
+
+$mail->send();
+
+header("Location: sent.html");
