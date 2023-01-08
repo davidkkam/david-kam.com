@@ -1,16 +1,17 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
+	Multiverse by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>David's Website</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 
@@ -19,28 +20,23 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
-							</div>
-						</div>
+						<h1><a href="#" onclick="return false;"><strong>David's</strong> Itinerary</a></h1>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+								<li><a href="#whatwedo" class="icon solid fa-heart">What We Can Do</a></li>
+								<li><a href="#footer" class="icon solid fa-suitcase">Plan My Trip</a></li>
+								<li><a href="#footer" class="icon solid fa-address-book">Testimonials</a></li>
 							</ul>
 						</nav>
 					</header>
 
+<h3 style="background-color:transparent;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"The world is a book and those who do not travel read only one page.”</h3>
+
 				<!-- Main -->
+	<div id="main">
+
+						<!-- Intro -->
 					<div id="main">
 
 						<!-- Intro -->
@@ -287,76 +283,118 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</ul>
 								</section>
 
+							</article>
+
+					</div>
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
 								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
+									<h2>David Kam</h2>
+									<p>Hi, my name’s David, and I’m looking forward to working with you on planning your next adventure.</p>
+								</section>
+								<section>
+									<h2>Follow me on ...</h2>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/david.kam.921" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.instagram.com/davi_kam/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a href="https://www.linkedin.com/in/david-kam-mba-51996018/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									&copy; <a href="http://david-kam.com">DAVID KAM</a>.
+								</p>
+							</div>
+							<div>
+							<section>
+									<h2>Get in touch</h2>
+									<form id="contact" onsubmit="return postToGoogle();">
 										<div class="fields">
 											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+												<input type="text" name="entry.799662941" id="name" placeholder="Name" />
 											</div>
 											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+												<input type="text" name="entry.707588761" id="email" placeholder="Email" />
 											</div>
 											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="entry.1767277697" id="message" rows="4" placeholder="Message"></textarea>
 											</div>
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="submit" value="Send" class="primary", onclick="window.location.href = 'https://david-kam.com/whatwedo';"  /></li>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</form>
 								</section>
+							</div>
+						</div>
+					</footer>
 
-							</article>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<!-- Footer -->
+					<footer id="whatwedo" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>What We Can Do</h2>
+									<p>We are a small business tour company with a passion for sustainability that excels at providing affordable cultural tours in the United States for families, seniors, couples and private small groups based on the needs of our clients. We will accommodate your personal requests at the most reasonable price and ensure your tour experience is valuable and memorable. </p>
+									<ul>
+										<li>Sustainable</li>
+										<li>Ethical</li>
+										<li>Responsible</li>
+										<li>Affordable</li>
+									</ul> 
+								</section>
+							</div>
+							<div>
+								<section>
+								<img src="images/thumbs/10.jpg" alt="" /></a>
+								</section>
+							</div>
+						</div>
 					</footer>
 
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    function postToGoogle() {
+      var field1 = $("#name").val();
+      var field2 = $("#email").val();
+      var field3 = $("#message").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSehBbpoOx9Dx85aMpHCxGYlWeafjUCL3Ey1PQNZRfksn5cLrw/formResponse",
+          
+        //add your google form generated numbers below which are also the 'names' of your inputs     
+        data: {
+          "entry.799662941": field1,
+          "entry.707588761": field2,
+          "entry.1767277697": field3
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
+    }
+  </script>
 
 	</body>
 </html>
