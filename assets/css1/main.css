@@ -322,16 +322,16 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #c9c9c9;
+		border-left: solid 4px #36383c;
 		font-style: italic;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
 
 	code {
-		background: rgba(144, 144, 144, 0.075);
+		background: #34363b;
 		border-radius: 4px;
-		border: solid 1px #c9c9c9;
+		border: solid 1px #36383c;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -354,7 +354,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #c9c9c9;
+		border-bottom: solid 1px #36383c;
 		margin: 2em 0;
 	}
 
@@ -1858,7 +1858,26 @@ input, select, textarea {
 			margin-top: 0;
 		}
 
+	::-webkit-input-placeholder {
+		color: #707071 !important;
+		opacity: 1.0;
 	}
+
+	:-moz-placeholder {
+		color: #707071 !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: #707071 !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: #707071 !important;
+		opacity: 1.0;
+	}
+
 
 /* Icon */
 
@@ -2451,7 +2470,7 @@ input, select, textarea {
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.075);
+				background-color: #34363b);
 			}
 
 		table td {
@@ -2518,7 +2537,7 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 2px #585858;
-		color: #585858 !important;
+		color: #34a58e !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2556,8 +2575,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f2849e !important;
-			box-shadow: inset 0 0 0 2px #f2849e;
+			color: #34a58e !important;
+			box-shadow: inset 0 0 0 2px #34a58e;
 		}
 
 		input[type="submit"]:active,
@@ -2565,7 +2584,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(242, 132, 158, 0.1);
+			background-color: rgba(52, 165, 142, 0.15);
+				color: #34a58e !important;
 		}
 
 		input[type="submit"].small,
