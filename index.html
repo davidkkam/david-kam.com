@@ -113,13 +113,9 @@
 											<div class="field">
 												<textarea name="entry.1767277697" id="message" rows="4" placeholder="Message"></textarea>
 											</div>
-											<div id="thank_you" style="display: none;">
-												<p>Thanks for filling up the form!</p>
-												<button type="submit">Close</button>
-												</div>
 										</div>
 										<ul class="actions">
-											<li><input type="submit" value="Send" class="primary" /></li>
+											<li><input type="submit" value="Send" class="primary", onclick="window.location.href = 'https://david-kam.com/whatwedo';"  /></li>
 											<li><input type="reset" value="Reset" /></li>
 										</ul>
 									</form>
@@ -189,18 +185,6 @@
       return false;
     }
   </script>
-  <script>
-  var nextStep = document.querySelector('#nextStep');
-
-  nextStep.addEventListener('click', function (e) {
-    e.preventDefault();
-    // Hide first view
-    document.getElementById('my_form').style.display = 'none';
-
-    // Show thank you message element
-    document.getElementById('thank_you').style.display = 'block';
-  });
-</script>
 
 	</body>
 </html>
