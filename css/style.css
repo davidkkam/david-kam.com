@@ -516,8 +516,8 @@ footer .copyright p {
         height: 125px
     }
     .about-us .item:first-of-type {
-        left: 440px;
-        bottom: 154px;
+        left: 0px;
+        bottom: 0px;
     }
     .about-us .item:nth-of-type(2) {
         left: 167px;
